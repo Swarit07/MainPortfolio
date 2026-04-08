@@ -71,7 +71,7 @@ export default function RootLayout({
       lang="en"
       className={`${syne.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col font-body">
+      <body suppressHydrationWarning className="flex min-h-full flex-col font-body">
         <Navbar />
         <main id="main-content" className="flex-1">
           {children}
