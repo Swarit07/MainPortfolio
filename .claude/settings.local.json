@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --use-npm --turbopack 2>&1)",
+      "Bash(cp -r /tmp/mainportfolio/. /Users/swaritsheel/Developer/Projects/MainPortfolio/ && rm -rf /tmp/mainportfolio)",
+      "Bash(npm install lucide-react 2>&1)",
+      "Bash(npm run build 2>&1)",
+      "Bash(rm -rf /Users/swaritsheel/Developer/Projects/MainPortfolio/node_modules && npm install 2>&1)",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); const names = Object.keys\\(l\\).filter\\(k => typeof l[k] === 'object' && k[0] === k[0].toUpperCase\\(\\)\\); const matches = names.filter\\(n => /git|link|mail|globe|extern/i.test\\(n\\)\\); console.log\\(matches.sort\\(\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(npm run lint 2>&1)",
+      "Bash(npm run lint 2>&1 && npm run build 2>&1)",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); console.log\\(['ArrowUpRight','FolderOpen','Code2'].map\\(n => n + ': ' + \\(n in l\\)\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const l = require\\('lucide-react'\\); console.log\\(['Download','Briefcase','FileText'].map\\(n => n + ': ' + \\(n in l\\)\\).join\\('\\\\n'\\)\\)\")"
+    ]
+  }
+}
