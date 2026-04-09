@@ -8,6 +8,8 @@ export interface Project {
   demoUrl?: string;
   imageUrl?: string;
   featured?: boolean;
+  type?: "personal" | "course" | "lab";
+  date?: string;
 }
 
 export interface Experience {
@@ -22,9 +24,29 @@ export interface Experience {
   logoUrl?: string;
 }
 
+export interface ClubLeadership {
+  id: string;
+  organization: string;
+  role: string;
+  location?: string;
+  startDate: string;
+  endDate: string;
+  description: string[];
+  tags?: string[];
+}
+
+export interface Award {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  description: string;
+  type: "award" | "certification";
+}
+
 export interface Skill {
   name: string;
-  category: "languages" | "frameworks" | "tools" | "hardware";
+  category: "languages" | "hardware" | "tools" | "concepts";
 }
 
 export interface SocialLink {

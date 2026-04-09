@@ -7,15 +7,23 @@ interface SkillsSectionProps {
 
 const categoryOrder: Skill["category"][] = [
   "languages",
-  "frameworks",
-  "tools",
   "hardware",
+  "tools",
+  "concepts",
 ];
+
+const categoryLabels: Record<Skill["category"], string> = {
+  languages: "languages",
+  hardware: "hardware & electronics",
+  tools: "tools & platforms",
+  concepts: "concepts",
+};
 
 export function SkillsSection({ skills }: SkillsSectionProps) {
   const grouped = categoryOrder
     .map((cat) => ({
       category: cat,
+      label: categoryLabels[cat],
       items: skills.filter((s) => s.category === cat),
     }))
     .filter((g) => g.items.length > 0);
@@ -23,16 +31,16 @@ export function SkillsSection({ skills }: SkillsSectionProps) {
   if (grouped.length === 0) return null;
 
   return (
-    <div className="grid gap-4">
-      {grouped.map(({ category, items }) => (
+    <div className="grid gap-6">
+      {grouped.map(({ category, label, items }) => (
         <div
           key={category}
           role="group"
-          aria-label={category}
-          className="grid items-baseline gap-3 sm:grid-cols-[8rem_1fr]"
+          aria-label={label}
+          className="grid items-baseline gap-3 sm:grid-cols-[10rem_1fr]"
         >
           <span className="font-mono text-xs uppercase tracking-widest text-text-secondary">
-            {category}
+            {label}
           </span>
           <div className="flex flex-wrap gap-2">
             {items.map((skill) => (

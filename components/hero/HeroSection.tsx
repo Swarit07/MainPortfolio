@@ -42,7 +42,7 @@ export function HeroSection() {
       <div className="mx-auto w-full max-w-5xl">
         {/* Prefix tag */}
         <p
-          className={`font-mono text-sm text-accent transition-all duration-500 ${
+          className={`font-mono text-sm text-accent transition-all duration-300 ${
             mounted
               ? "translate-y-0 opacity-100"
               : "translate-y-4 opacity-0"
@@ -53,7 +53,7 @@ export function HeroSection() {
 
         {/* Name */}
         <h1
-          className={`mt-4 font-display text-5xl font-extrabold lowercase tracking-tight text-text-primary transition-all delay-100 duration-500 sm:text-7xl lg:text-8xl ${
+          className={`mt-4 font-display text-5xl font-extrabold lowercase tracking-tight text-text-primary transition-all delay-75 duration-300 sm:text-7xl lg:text-8xl ${
             mounted
               ? "translate-y-0 opacity-100"
               : "translate-y-4 opacity-0"
@@ -64,7 +64,7 @@ export function HeroSection() {
 
         {/* Title */}
         <p
-          className={`mt-4 font-mono text-lg text-text-secondary transition-all delay-200 duration-500 sm:text-xl ${
+          className={`mt-4 font-mono text-lg text-text-secondary transition-all delay-150 duration-300 sm:text-xl ${
             mounted
               ? "translate-y-0 opacity-100"
               : "translate-y-4 opacity-0"
@@ -76,7 +76,7 @@ export function HeroSection() {
 
         {/* Tagline */}
         <p
-          className={`mt-6 max-w-lg text-base leading-relaxed text-text-secondary transition-all delay-300 duration-500 sm:text-lg ${
+          className={`mt-6 max-w-lg text-base leading-relaxed text-text-secondary transition-all delay-200 duration-300 sm:text-lg ${
             mounted
               ? "translate-y-0 opacity-100"
               : "translate-y-4 opacity-0"
@@ -88,7 +88,7 @@ export function HeroSection() {
 
         {/* Social links */}
         <div
-          className={`mt-8 flex items-center gap-1 transition-all delay-[400ms] duration-500 ${
+          className={`mt-8 flex items-center gap-1 transition-all delay-[250ms] duration-300 ${
             mounted
               ? "translate-y-0 opacity-100"
               : "translate-y-4 opacity-0"
@@ -118,17 +118,17 @@ export function HeroSection() {
 
       {/* Scroll indicator */}
       <div
-        className={`absolute bottom-8 left-1/2 -translate-x-1/2 transition-all delay-[600ms] duration-500 ${
+        className={`absolute bottom-8 left-1/2 -translate-x-1/2 transition-all delay-300 duration-300 ${
           mounted ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
         }`}
       >
         <a
           href="#about"
           aria-label="Scroll to about section"
-          className="flex flex-col items-center gap-2 text-text-tertiary transition-colors duration-150 hover:text-accent"
+          className="flex flex-col items-center gap-2 px-4 py-2 text-text-tertiary transition-colors duration-150 hover:text-accent"
         >
           <span className="font-mono text-xs">scroll</span>
-          <ArrowDown size={16} className="animate-bounce" />
+          <ArrowDown size={16} className="motion-safe:animate-bounce" />
         </a>
       </div>
     </section>

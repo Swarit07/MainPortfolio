@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { SubsectionHeading } from "@/components/ui/SubsectionHeading";
 import { ProjectGrid } from "@/components/projects/ProjectGrid";
 import { projects } from "@/data/projects";
 
@@ -15,6 +16,9 @@ export const metadata: Metadata = {
 };
 
 export default function ProjectsPage() {
+  const featured = projects.filter((p) => p.featured);
+  const rest = projects.filter((p) => !p.featured);
+
   return (
     <section
       aria-labelledby="projects-heading"
@@ -25,7 +29,20 @@ export default function ProjectsPage() {
         title="projects"
         subtitle="Built things that worked, broke, and taught me something."
       />
-      <ProjectGrid projects={projects} />
+
+      {featured.length > 0 && (
+        <section aria-labelledby="featured-heading">
+          <SubsectionHeading id="featured-heading" title="featured" />
+          <ProjectGrid projects={featured} />
+        </section>
+      )}
+
+      {rest.length > 0 && (
+        <section aria-labelledby="more-heading" className="mt-12">
+          <SubsectionHeading id="more-heading" title="more projects" />
+          <ProjectGrid projects={rest} />
+        </section>
+      )}
     </section>
   );
 }

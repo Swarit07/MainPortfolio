@@ -10,10 +10,10 @@
 - `components/layout/` -- Navbar, Footer (shared via app/layout.tsx)
 - `components/hero/` -- HeroSection, AboutSection
 - `components/projects/` -- ProjectGrid, ProjectCard
-- `components/experience/` -- Timeline, TimelineCard, SkillsSection, ResumeButton
-- `components/ui/` -- SocialLinks, TechTag, SectionHeading
-- `data/` -- projects.ts, experience.ts, skills.ts, socials.ts
-- `lib/types.ts` -- Project, Experience, Skill, SocialLink interfaces
+- `components/experience/` -- Timeline, TimelineCard, ClubCard, ClubsSection, SkillsSection, AwardsSection, ResumeButton
+- `components/ui/` -- SocialLinks, TechTag, SectionHeading, SubsectionHeading
+- `data/` -- projects.ts, experience.ts, clubs.ts, awards.ts, skills.ts, socials.ts
+- `lib/types.ts` -- Project, Experience, ClubLeadership, Award, Skill, SocialLink interfaces
 
 ## Design Constraints
 - Dark theme default, no light mode toggle for v1
@@ -28,7 +28,8 @@
 ## About Me
 - Name: Swarit Sheel
 - Title: Computer Engineering @ UIUC
-- Skills: C, Java, Arduino, LC-3 Assembly, Python, JavaScript
-- Interests: Robotics, embedded systems, astrophysics, entrepreneurship
-- Experience: Liebherr Canada (co-op), Longo's, MDSA Programming Club exec, DECA ESB exec
+- Skills: C, Python, Java, C#, C++, JavaScript, HTML/CSS, LC-3 Assembly, Verilog, Arduino, FPGA
+- Interests: Robotics, embedded systems, digital logic, computer vision, astrophysics, entrepreneurship
+- Experience: Liebherr Group (co-op), Longo's, MDHS Computer Services
+- Leadership: Programming Club President, Mill Hacks organizer, DECA Chapter Executive, Mustang Messenger editor
 - Socials: GitHub, LinkedIn

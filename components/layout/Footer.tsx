@@ -43,7 +43,7 @@ export function Footer() {
                         ? undefined
                         : "noopener noreferrer"
                     }
-                    className="group flex h-10 items-center gap-2 rounded px-3 font-mono text-sm text-text-secondary transition-colors duration-150 hover:text-accent"
+                    className="group flex h-11 items-center gap-2 rounded px-3 font-mono text-sm text-text-secondary transition-colors duration-150 hover:text-accent"
                   >
                     <Icon
                       width={16}

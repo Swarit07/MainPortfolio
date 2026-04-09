@@ -1,10 +1,12 @@
 const interests = [
   "Robotics",
   "Embedded Systems",
-  "Black Holes",
+  "Digital Logic",
+  "Computer Vision",
   "Astrophysics",
   "Entrepreneurship",
   "Low-Level Programming",
+  "Circuit Design",
 ] as const;
 
 export function AboutSection() {
@@ -52,7 +54,7 @@ export function AboutSection() {
             {interests.map((interest) => (
               <span
                 key={interest}
-                className="rounded-sm border border-border bg-bg-secondary px-3 py-1.5 font-mono text-xs text-text-secondary transition-colors duration-150 hover:border-border-hover hover:text-accent"
+                className="rounded-sm border border-border bg-bg-secondary px-3 py-1.5 font-mono text-xs text-text-secondary"
               >
                 {interest}
               </span>
