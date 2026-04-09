@@ -3,13 +3,13 @@ import { SocialLink } from "@/lib/types";
 export const socials: SocialLink[] = [
   {
     platform: "github",
-    url: "https://github.com/swaritsheel",
+    url: "https://github.com/Swarit07",
     label: "GitHub",
     icon: "github",
   },
   {
     platform: "linkedin",
-    url: "https://linkedin.com/in/swaritsheel",
+    url: "https://www.linkedin.com/in/swarit-sheel/",
     label: "LinkedIn",
     icon: "linkedin",
   },

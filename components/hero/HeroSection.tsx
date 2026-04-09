@@ -83,7 +83,7 @@ export function HeroSection() {
           }`}
         >
           Building at the intersection of hardware and software.
-          Robots, embedded systems, and the occasional black hole rabbit hole.
+          Embedded systems, AI tooling, and whatever side project I can&apos;t stop thinking about.
         </p>
 
         {/* Social links */}

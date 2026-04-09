@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SubsectionHeading } from "@/components/ui/SubsectionHeading";
+import { FadeIn } from "@/components/ui/FadeIn";
 import { Timeline } from "@/components/experience/Timeline";
 import { ClubsSection } from "@/components/experience/ClubsSection";
 import { SkillsSection } from "@/components/experience/SkillsSection";
@@ -28,40 +29,47 @@ export default function ExperiencePage() {
       aria-labelledby="experience-heading"
       className="mx-auto max-w-5xl px-6 py-16 sm:py-24"
     >
-      <SectionHeading
-        id="experience-heading"
-        title="experience"
-        subtitle="Where I've worked, what I've led, and what I know."
-      />
+      <FadeIn>
+        <SectionHeading
+          id="experience-heading"
+          title="experience"
+          subtitle="Where I've worked, what I've led, and what I know."
+        />
+      </FadeIn>
 
-      {/* Work Experience */}
-      <section aria-labelledby="work-heading">
-        <SubsectionHeading id="work-heading" title="work" />
-        <Timeline experiences={experiences} />
-      </section>
+      <FadeIn delay={75}>
+        <section aria-labelledby="work-heading">
+          <SubsectionHeading id="work-heading" title="work" />
+          <Timeline experiences={experiences} />
+        </section>
+      </FadeIn>
 
-      {/* Clubs & Leadership */}
-      <section aria-labelledby="leadership-heading" className="mt-16">
-        <SubsectionHeading id="leadership-heading" title="leadership" />
-        <ClubsSection clubs={clubs} />
-      </section>
+      <FadeIn delay={100}>
+        <section aria-labelledby="leadership-heading" className="mt-16">
+          <SubsectionHeading id="leadership-heading" title="leadership" />
+          <ClubsSection clubs={clubs} />
+        </section>
+      </FadeIn>
 
-      {/* Skills */}
-      <section aria-labelledby="skills-heading" className="mt-16">
-        <SubsectionHeading id="skills-heading" title="skills" />
-        <SkillsSection skills={skills} />
-      </section>
+      <FadeIn delay={150}>
+        <section aria-labelledby="skills-heading" className="mt-16">
+          <SubsectionHeading id="skills-heading" title="skills" />
+          <SkillsSection skills={skills} />
+        </section>
+      </FadeIn>
 
-      {/* Awards & Certifications */}
-      <section aria-labelledby="awards-heading" className="mt-16">
-        <SubsectionHeading id="awards-heading" title="awards & certifications" />
-        <AwardsSection awards={awards} />
-      </section>
+      <FadeIn delay={200}>
+        <section aria-labelledby="awards-heading" className="mt-16">
+          <SubsectionHeading id="awards-heading" title="awards & certifications" />
+          <AwardsSection awards={awards} />
+        </section>
+      </FadeIn>
 
-      {/* Resume */}
-      <div className="mt-16">
-        <ResumeButton />
-      </div>
+      <FadeIn delay={200}>
+        <div className="mt-16">
+          <ResumeButton />
+        </div>
+      </FadeIn>
     </section>
   );
 }
