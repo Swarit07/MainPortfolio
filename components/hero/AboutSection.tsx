@@ -3,8 +3,8 @@ const interests = [
   "Embedded Systems",
   "Digital Logic",
   "Computer Vision",
-  "Astrophysics",
-  "Entrepreneurship",
+  "AI & LLMs",
+  "Startups",
   "Low-Level Programming",
   "Circuit Design",
 ] as const;
@@ -32,20 +32,22 @@ export function AboutSection() {
         <div className="mt-8 grid gap-12 lg:grid-cols-[1fr_auto] lg:gap-16">
           <div className="space-y-5 text-base leading-relaxed text-text-secondary sm:text-lg">
             <p>
-              I&apos;m a Computer Engineering student at the University of
-              Illinois Urbana-Champaign, drawn to the space where
-              circuits meet code. I like building things that move, think,
-              and solve real problems.
+              I&apos;m studying Computer Engineering at UIUC. Most of my
+              time goes into figuring out how hardware and software talk to
+              each other &mdash; whether that&apos;s wiring up circuits on a
+              breadboard or writing C that runs close to the metal.
             </p>
             <p>
-              My work spans embedded systems and microcontroller projects
-              to full-stack software. When I&apos;m not debugging register
-              maps or writing firmware, I&apos;m probably reading about
-              astrophysics or chasing the next startup idea.
+              Lately I&apos;ve been getting into AI tooling and learning how
+              to build faster with tools like Claude Code and Cursor. I like
+              the idea of using AI as a multiplier, not a replacement &mdash;
+              still writing the code, just moving quicker.
             </p>
             <p>
-              I believe the best engineers are equal parts curious and
-              stubborn. I try to be both.
+              Outside of coursework I&apos;m usually working on some side
+              project or trying to turn an idea into something real. Ran a
+              hackathon, pitched a startup at DECA, and I&apos;m always
+              looking for the next thing to build.
             </p>
           </div>
 
